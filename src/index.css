@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('@/assets/fonts/fonnts.com-Proxima_Nova_Soft_W03_Regular.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('@/assets/fonts/fonnts.com-ProximaSansMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('@/assets/fonts/fonnts.com-ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}@font-face {
+    font-family: 'Proxima Nova';
+    src: url('@/assets/fonts/fonnts.com-Proxima_Nova_A_W01_Extrabold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
