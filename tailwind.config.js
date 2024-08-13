@@ -11,7 +11,7 @@ export default {
             },
             colors: {
                 blue: {
-                    100: '#f8fbff'
+                    DEFAULT: '#f9fbff'
                 }
             }
         },

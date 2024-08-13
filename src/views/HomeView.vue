@@ -1,24 +1,27 @@
 <template>
-  <main class="bg-[url('../src/assets/images/bg.jpg')] bg-center bg-cover pt-32">
-    <div class="container">
-      <pre>{{registration}}</pre>
-    </div>
+  <main>
+    <Hero :registration="registration" />
+    <ShortDescription :shortDescription="shortDescription" />
+    <Statistics :statistics="statistics" />
+    <Research :research="research" />
+    <MainVideo :mainVideo="mainVideo" />
   </main>
 </template>
 
 <script setup>
-import {createStore} from 'vuex'
-import {computed, onMounted} from 'vue'
-
-const store = createStore()
-const registration = computed( () => store.getters.registration)
+import {useStore} from 'vuex'
+import {computed} from 'vue'
+import Hero from "@/components/sections/Hero.vue";
+import ShortDescription from "@/components/sections/ShortDescription.vue";
+import Statistics from "@/components/sections/Statistics.vue";
+import Research from "@/components/sections/Research.vue";
+import MainVideo from "@/components/sections/MainVideo.vue";
+const store = useStore()
+const registration = computed(() => store.getters.registration);
 const statistics = computed( () => store.getters.statistics)
 const research = computed( () => store.getters.research)
 const shortDescription = computed( () => store.getters.shortDescription)
 const mainVideo = computed( () => store.getters.mainVideo)
- onMounted(() => {
-   store.dispatch('getIndex')
- })
 
 </script>
 

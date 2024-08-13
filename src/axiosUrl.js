@@ -1,5 +1,5 @@
 import axios from "axios";
 const axiosUrl = axios.create({
-    baseURL: "https://qlapi.stesting.uz/api/v1/",
+    baseURL: 'https://qlapi.stesting.uz/api/v1'
 })
 export default axiosUrl;
